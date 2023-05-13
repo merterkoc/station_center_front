@@ -1,0 +1,44 @@
+{
+  "id": 235660,
+  "name": "Bilkent Center",
+  "connectorCount": 4,
+  "imageList": [
+    "https://www.iamge.com",
+    "https://www.iamge.com"
+  ],
+  "operatorInfo": {
+    "id": 2247,
+    "title": "oncharge",
+    "webSiteUrl": "https://www.oncharge.com.tr",
+    "contactPhone": "+905359752785",
+    "isPrivateIndividual": false,
+    "addressInfo": "Operator company address",
+    "contactEmail": "info@oncharge.com",
+    "appStoreUrl": "appstoreurl",
+    "playStore": "playstoreurl"
+  },
+  "isMemberShipRequired": false,
+  "usageCost": "5,5₺/kwh",
+  "addressInfo": {
+    "title": "BilkentCenter",
+    "addressInfoLine": "Bilkent Center AVM otopark",
+    "province": "Ankara",
+    "country": "Türkiye",
+    "latitude": 37.780848324195176,
+    "longitude": -3.808472320278838,
+    "contactPhone": "+905359752785",
+    "contactEmail": "info@oncharge.com"
+  },
+  "connectors": [
+    {
+      "type": "CCS (Type 2)",
+      "currentType": "AC (Single)",
+      "powerKW": 22.0
+    },
+    {
+      "type": "CHADEMO",
+      "currentType": "DC (Single)",
+      "powerKW": 180
+    }
+  ]
+}
