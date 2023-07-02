@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:station_center/const/http_const.dart';
 import 'package:station_center/dio/progress_manager.dart';
 
-class DioClient extends LoaderManager{
+class DioClient extends LoaderManager {
   DioClient._internal();
 
   static final DioClient _instance = DioClient._internal();
@@ -20,21 +20,22 @@ class DioClient extends LoaderManager{
       await Future.delayed(const Duration(seconds: 4));
       Response response = await _dio.get(url);
       return response;
-    } on DioError catch (e) {
+    } on DioException {
       rethrow;
-    }finally{
+    } finally {
       if (loader) loaderDecrease();
     }
   }
 
-  Future<Response> post(String url, dynamic data, {required bool loader}) async {
+  Future<Response> post(String url, dynamic data,
+      {required bool loader}) async {
     try {
       if (loader) loaderIncrease();
       Response response = await _dio.post(url, data: data);
       return response;
-    } on DioError catch (e) {
+    } on DioException {
       rethrow;
-    }finally{
+    } finally {
       if (loader) loaderDecrease();
     }
   }
@@ -44,9 +45,9 @@ class DioClient extends LoaderManager{
       if (loader) loaderIncrease();
       Response response = await _dio.put(url, data: data);
       return response;
-    } on DioError catch (e) {
+    } on DioException {
       rethrow;
-    }finally{
+    } finally {
       if (loader) loaderDecrease();
     }
   }
@@ -56,9 +57,9 @@ class DioClient extends LoaderManager{
       if (loader) loaderIncrease();
       Response response = await _dio.delete(url);
       return response;
-    } on DioError catch (e) {
+    } on DioException {
       rethrow;
-    }finally{
+    } finally {
       if (loader) loaderDecrease();
     }
   }
