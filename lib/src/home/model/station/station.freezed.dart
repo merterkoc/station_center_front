@@ -358,24 +358,16 @@ class _$_Station implements _Station {
 
 abstract class _Station implements Station {
   factory _Station(
-      {@JsonKey(name: 'id')
-          final int? id,
-      @JsonKey(name: 'name')
-          final String? name,
-      @JsonKey(name: 'connectorCount')
-          final num? connectorCount,
-      @JsonKey(name: 'operatorInfo')
-          final OperatorInfo? operatorInfo,
-      @JsonKey(name: 'imageList')
-          final List<String>? imageList,
-      @JsonKey(name: 'isMemberShipRequired')
-          final bool? isMemberShipRequired,
-      @JsonKey(name: 'usageCost')
-          final String? usageCost,
-      @JsonKey(name: 'addressInfo')
-          final AddressInfo? addressInfo,
+      {@JsonKey(name: 'id') final int? id,
+      @JsonKey(name: 'name') final String? name,
+      @JsonKey(name: 'connectorCount') final num? connectorCount,
+      @JsonKey(name: 'operatorInfo') final OperatorInfo? operatorInfo,
+      @JsonKey(name: 'imageList') final List<String>? imageList,
+      @JsonKey(name: 'isMemberShipRequired') final bool? isMemberShipRequired,
+      @JsonKey(name: 'usageCost') final String? usageCost,
+      @JsonKey(name: 'addressInfo') final AddressInfo? addressInfo,
       @JsonKey(name: 'connector')
-          final List<Connector>? connector}) = _$_Station;
+      final List<Connector>? connector}) = _$_Station;
 
   factory _Station.fromJson(Map<String, dynamic> json) = _$_Station.fromJson;
 

@@ -292,22 +292,16 @@ class _$_OperatorInfo implements _OperatorInfo {
 
 abstract class _OperatorInfo implements OperatorInfo {
   factory _OperatorInfo(
-      {@JsonKey(name: 'id')
-          final num? id,
-      @JsonKey(name: 'title')
-          final String? title,
-      @JsonKey(name: 'webSiteUrl')
-          final String? webSiteUrl,
-      @JsonKey(name: 'contactPhone')
-          final String? contactPhone,
-      @JsonKey(name: 'isPrivateIndividual')
+          {@JsonKey(name: 'id') final num? id,
+          @JsonKey(name: 'title') final String? title,
+          @JsonKey(name: 'webSiteUrl') final String? webSiteUrl,
+          @JsonKey(name: 'contactPhone') final String? contactPhone,
+          @JsonKey(name: 'isPrivateIndividual')
           required final bool? isPrivateIndividual,
-      @JsonKey(name: 'contactEmail')
-          final String? contactEmail,
-      @JsonKey(name: 'appStoreUrl')
-          final String? appStoreUrl,
-      @JsonKey(name: 'googlePlayUrl')
-          final String? googlePlayUrl}) = _$_OperatorInfo;
+          @JsonKey(name: 'contactEmail') final String? contactEmail,
+          @JsonKey(name: 'appStoreUrl') final String? appStoreUrl,
+          @JsonKey(name: 'googlePlayUrl') final String? googlePlayUrl}) =
+      _$_OperatorInfo;
 
   factory _OperatorInfo.fromJson(Map<String, dynamic> json) =
       _$_OperatorInfo.fromJson;

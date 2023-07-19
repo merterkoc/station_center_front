@@ -5,13 +5,11 @@ class HomeState extends Equatable {
     this.stationList,
     this.selectedStation,
     this.iconList,
-    this.mapController,
   });
 
   final List<Station>? stationList;
   final Station? selectedStation;
   final List<BitmapDescriptor>? iconList;
-  final GoogleMapController? mapController;
 
   HomeState copyWith({
     List<Station>? stationList,
@@ -23,7 +21,6 @@ class HomeState extends Equatable {
       stationList: stationList ?? this.stationList,
       selectedStation: selectedStation ?? this.selectedStation,
       iconList: iconList ?? this.iconList,
-      mapController: mapController ?? this.mapController,
     );
   }
 
@@ -32,6 +29,5 @@ class HomeState extends Equatable {
         stationList,
         selectedStation,
         iconList,
-        mapController,
       ];
 }
